@@ -4,14 +4,15 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.demo.entity.User;
+import com.example.demo.entity.Users;
 
 @RestController
 public class UserController {
-    @GetMapping("/")
+
+    @GetMapping("/user")
     @ResponseBody
-    public User getUser() {
-        User user = new User();
+    public Users getUser() {
+        Users user = new Users();
         user.setId(12);
         user.setName("皆伝になりたい人です");
         user.setAge(27);
