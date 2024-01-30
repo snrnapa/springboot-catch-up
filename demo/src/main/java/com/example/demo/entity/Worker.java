@@ -4,7 +4,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
 @Entity
-public class Users {
+public class Worker {
     @Id
     private Integer Id;
     private String Name;
